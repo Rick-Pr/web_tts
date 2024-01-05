@@ -1,0 +1,8 @@
+pydub
+torch
+pytest-shutil
+soundfile
+streamlit
+silero
+numpy
+ffmpeg
