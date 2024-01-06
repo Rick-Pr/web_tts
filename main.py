@@ -19,7 +19,6 @@ st.markdown(
 )
 if st.button('Отправить'):
     main(text_input)
-    print(11)
     try:
         if st.audio('./files/audio_file.wav'):
             st.text('Можете прослушать и скачать ваш файл')
