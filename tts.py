@@ -69,15 +69,15 @@ def main(text_form):
         output_file = 'audio_file.wav'
 
         # перенос готового аудио в .\files и удаление буферного файла
-        source_path = str(os.getcwd()) + '\\' + output_file
+        source_path = str(os.getcwd()) + '/' + output_file
         source_path = os.path.normpath(source_path)
         if path.exists(source_path):
-            shutil.move(source_path, (os.path.normpath(str(os.getcwd()) + '\\files\\' + output_file)))
+            shutil.move(source_path, (os.path.normpath(str(os.getcwd()) + '/files/' + output_file)))
 
         os.remove('output.wav')
 
     # удаление предыдущей записи tts
-    destination_path = str(os.getcwd()) + '\\files\\audio_file.wav'
+    destination_path = str(os.getcwd()) + '/files/audio_file.wav'
     destination_path = os.path.normpath(destination_path)
     if path.exists(destination_path):
         os.remove(destination_path)
