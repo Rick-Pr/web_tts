@@ -4,6 +4,7 @@ import streamlit as st
 st.set_page_config("Озвучивание текста")
 text_input = st.text_area('', placeholder='Введите ваш текст:')
 
+st.lable(label_visibility=True)
 st.base = "dark"
 st.markdown(
     """
