@@ -2,5 +2,6 @@ audiosegment
 torch
 soundfile
 streamlit
-
-
+numpy
+ffmpeg
+omegaconf
